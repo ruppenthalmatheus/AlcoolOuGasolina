@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Qual Compensa?</string>
+    <string name="descriptionIconeApp">Desenho de uma bomba de gasolina</string>
+    <string name="descriptionIconeGota">Desenho de uma gota de combustível</string>
+    <string name="descriptionIconeEtanol">Desenho de um milho representando uma bomba de combustível de etanol </string>
+    <string name="descriptionIconeGasolina">Desenho de uma bomba de combustível de gasolina </string>
+    <string name="descriptionIconePonteiro">Desenho de um ponteiro que, após calcular, marca qual dos dois combustíveis compensa mais </string>
+    <string name="mainTitle">Combustíveis utilizados:</string>
+    <string name="mainCalcularBtn">Calcular</string>
+    <string name="descriptionCalcularBtn">Botão para calcular</string>
+    <string name="descriptionPrecoEtanol">Campo para informar o valor do preço do etanol</string>
+    <string name="descriptionPrecoGasolina">Campo para informar o valor do preço da gasolina</string>
+    <string name="mainPrecoEdtHint">R$ 0.00</string>
+    <string name="mainEtanolTxt">Etanol</string>
+    <string name="mainGasolinaTxt">Gasolina</string>
+    <string name="mensagemGasolina">Informe o preço da gasolina!</string>
+    <string name="mensagemEtanol">Informe o preço do etanol!</string>
+</resources>

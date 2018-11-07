@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="120dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/mainDropImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/descriptionIconeGota"
+                app:layout_constraintEnd_toStartOf="@+id/mainTitleTxt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/drop" />
+
+            <TextView
+                android:id="@+id/mainTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:contentDescription="@string/mainTitle"
+                android:text="@string/mainTitle"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/mainDropImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mainDropImg"
+                app:layout_constraintTop_toTopOf="@+id/mainDropImg"
+                tools:text="Combustíveis utilizados:" />
+
+            <ImageView
+                android:id="@+id/mainEtanolImg"
+                android:layout_width="69dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="80dp"
+                android:contentDescription="@string/descriptionIconeEtanol"
+                app:layout_constraintBottom_toBottomOf="@+id/mainGasolinaImg"
+                app:layout_constraintEnd_toEndOf="@+id/mainEtanolTxt"
+                app:layout_constraintEnd_toStartOf="@+id/mainGasolinaImg"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mainGasolinaImg"
+                app:srcCompat="@drawable/ethanol" />
+
+            <ImageView
+                android:id="@+id/mainGasolinaImg"
+                android:layout_width="69dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/descriptionIconeGasolina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mainEtanolImg"
+                app:layout_constraintTop_toBottomOf="@+id/mainGasolinaTxt"
+                app:srcCompat="@drawable/gasoline" />
+
+            <TextView
+                android:id="@+id/mainEtanolTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/mainEtanolTxt"
+                android:text="@string/mainEtanolTxt"
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintBottom_toTopOf="@+id/mainEtanolImg"
+                app:layout_constraintEnd_toEndOf="@+id/mainEtanolImg"
+                app:layout_constraintStart_toStartOf="@+id/mainEtanolImg"
+                app:layout_constraintTop_toBottomOf="@+id/mainTitleTxt"
+                tools:text="Etanol" />
+
+            <TextView
+                android:id="@+id/mainGasolinaTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/mainGasolinaTxt"
+                android:text="@string/mainGasolinaTxt"
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintEnd_toEndOf="@+id/mainGasolinaImg"
+                app:layout_constraintStart_toStartOf="@+id/mainGasolinaImg"
+                app:layout_constraintTop_toBottomOf="@+id/mainTitleTxt"
+                tools:text="Gasolina" />
+
+            <ImageView
+                android:id="@+id/mainPonteiroImg"
+                android:layout_width="129dp"
+                android:layout_height="131dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/descriptionIconePonteiro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainEtanolImg"
+                app:srcCompat="@drawable/center_mark" />
+
+            <EditText
+                android:id="@+id/mainPrecoEtanolEdt"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/mainPrecoEdtHint"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColorHint="#b7b7b7"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mainEtanolImg"
+                app:layout_constraintStart_toEndOf="@+id/mainEtanolImg"
+                app:layout_constraintTop_toTopOf="@+id/mainEtanolImg" />
+
+            <EditText
+                android:id="@+id/mainPrecoGasolinaEdt"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="@string/mainPrecoEdtHint"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColorHint="#b7b7b7"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mainGasolinaImg"
+                app:layout_constraintEnd_toStartOf="@+id/mainGasolinaImg"
+                app:layout_constraintTop_toTopOf="@+id/mainGasolinaImg" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/mainCalcularBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/white"
+        android:contentDescription="@string/descriptionCalcularBtn"
+        android:elevation="4dp"
+        android:onClick="calcularBtnClick"
+        android:text="@string/mainCalcularBtn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="CALCULAR" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/descriptionIconeApp"
+        app:layout_constraintBottom_toTopOf="@+id/mainCardView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/app_name"
+        android:text="@string/app_name"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>
